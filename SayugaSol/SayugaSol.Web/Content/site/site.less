@@ -2,3 +2,54 @@
 @import "site.mixins.less";
 @import "site.administration.less";
 @import "site.membership.less";
+
+
+.s-Default-CertificationDialog {
+    > .size { width: 700px; height:auto}
+    .caption { width: 150px; }
+    @media (min-width: 650px) {
+        .field.DateAcquired, .field.ExpirationDate{
+            flex: auto;
+            min-width: 50%;
+        }              
+}
+
+}
+
+.s-Default-ContactsDialog {
+    > .size { width: 700px; height:auto}
+    .caption { width: 150px; }
+
+    @media (min-width: 650px) {
+        .field.LastName, .field.FirstName, .field.Phone1, .field.Phone1Type, 
+        .field.Phone2, .field.Phone2Type, .field.Country, .field.PostalCode {
+            flex: auto;
+            min-width: 50%;
+        }        
+    }
+}
+
+.s-Default-EmployeeDialog {
+    > .size { width: 700px; height:auto}
+    .caption { width: 150px; }
+    
+    @media (min-width: 650px) {
+        .field.LastName, .field.FirstName, .field.Phone1, .field.Phone1Type, 
+        .field.Phone2, .field.Phone2Type, .field.Country, .field.PostalCode {
+            flex: auto;
+            min-width: 50%;
+        }        
+        
+    }
+    @media (min-width: 600px) {
+        .field.Dob, .field.HireDate {
+            flex: auto;                
+            min-width: 40%;
+        }        
+    }
+}
+
+.s-Default-SkillDialog {
+    > .size { width: 700px; height:auto}
+    .caption { width: 150px; }
+}
